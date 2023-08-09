@@ -33,10 +33,13 @@ const projectPackageJson = require(path.join(projectDir, 'package.json'));
 // Update the project's package.json with the new project name
 projectPackageJson.name = projectName;
 
+
 fs.writeFileSync(
   path.join(projectDir, 'package.json'),
   JSON.stringify(projectPackageJson, null, 2)
 );
+
+process.chdir(projectDir)
 
 // Run `npm install` in the project directory to install
 // the dependencies. We are using a third-party library
@@ -44,5 +47,8 @@ fs.writeFileSync(
 // (Node has issues spawning child processes in Windows).
 spawn.sync('npm', ['install'], { stdio: 'inherit' });
 
+// *** Installation completed ***
 console.log('Success! Your new project is ready.');
 console.log(`Created ${projectName} at ${projectDir}`);
+
+process.chdir(currentDir)

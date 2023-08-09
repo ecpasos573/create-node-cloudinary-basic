@@ -1,6 +1,6 @@
 {
   "name": "create-node-cloudinary-basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cloudinary Node JS SDK starter template tool",
   "bin": {
     "create-node-cloudinary-basic": "./index.js"
