@@ -33,13 +33,13 @@ const projectPackageJson = require(path.join(projectDir, 'package.json'));
 // Update the project's package.json with the new project name
 projectPackageJson.name = projectName;
 
+process.chdir(projectDir)
 
 fs.writeFileSync(
   path.join(projectDir, 'package.json'),
   JSON.stringify(projectPackageJson, null, 2)
 );
 
-process.chdir(projectDir)
 
 // Run `npm install` in the project directory to install
 // the dependencies. We are using a third-party library
