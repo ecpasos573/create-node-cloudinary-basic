@@ -1,7 +1,8 @@
 require('dotenv').load();
 var fs = require('fs');
+var colors = require('colors');
 
-import {v2 as cloudinary} from 'cloudinary';
+var cloudinary = require('cloudinary').v2;
           
 cloudinary.config({ 
   cloud_name: process.env.CLOUD_NAME, 
@@ -9,4 +10,4 @@ cloudinary.config({
   api_secret: process.env.API_SECRET 
 });
 
-console.log("Hello world!!!");
+console.log("Hello world!!!".green);
