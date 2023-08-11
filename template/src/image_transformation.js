@@ -1,8 +1,8 @@
 module.exports = {
     generateHtmlImageTag: function(image_filename) {
-        return "sample_generation"
+        return "ongoing_development"
     },
     generateImageDeliveryUrl: function(image_filename) {
-        return "image_filename"
+        return "ongoing_development"
     }
 };

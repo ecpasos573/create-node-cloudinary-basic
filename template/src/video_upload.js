@@ -1,11 +1,11 @@
 (function () {
 
     funcVideoUploadBasic001 = function() {
-        console.log('mlt funcOne here');
+        console.log('ongoing_development');
     }
 
     funcVideoUploadBasic001 = function(firstName) {
-            console.log(firstName, 'calls funcThree here');
+            console.log(firstName, 'ongoing_development');
     }
 
 })();

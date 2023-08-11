@@ -1,6 +1,6 @@
 {
   "name": "testdata",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Cloudinary Node SDK Basic Usage sample project",
   "license": "ISC",
   "dependencies": {

@@ -1,8 +1,8 @@
 module.exports = {
     generateHtmlVideoTag: function(image_filename) {
-        return "sample_generation"
+        return "ongoing_development"
     },
     generateVideoDeliveryUrl: function(image_filename) {
-        return "image_filename"
+        return "ongoing_development"
     }
 };

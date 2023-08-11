@@ -38,6 +38,12 @@ function initialize(){
 }
 
 
+
+
+
+
+
+
 /**
  * Main function
  */
@@ -45,10 +51,19 @@ function main() {
 
   var bContinue = initialize();
 
-  // CRUD function samples
+  // **********
 
-  // Advance features
+  // Image: CRUD function samples
 
+  // Image: Advance features
+
+  // **********
+
+  // Video: CRUD function samples
+
+  // Video: Advance features
+
+  // **********
 
   if(bContinue){
     console.log("\nHello world!!!\n".green);

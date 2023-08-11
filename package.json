@@ -1,6 +1,6 @@
 {
   "name": "create-node-cloudinary-basic-a",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Cloudinary Node JS SDK starter template tool",
   "bin": {
     "create-node-cloudinary-basic": "index.js"
@@ -10,7 +10,8 @@
     "url": "git+https://github.com/ecpasos573/create-node-cloudinary-basic.git"
   },
   "keywords": [
-    "template"
+    "cld-nodejs-template",
+    "cloudinary-nodejs-sdk"
   ],
   "author": "Eric C Pasos <epasos573@gmail.com>",
   "license": "ISC",

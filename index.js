@@ -50,10 +50,10 @@ if (!fs.existsSync(projectDir)) {
   // *** Installation completed ***
   console.log('\n*********************************************'.brightGreen);
   console.log('******** Cloudinary NodeJS SDK Basic ********'.green);
-  console.log(`Created ${projectName} at ${projectDir}`.gray);
+  console.log('Created %s at %s'.gray, `${projectName}`.bold.italic.white, `${projectDir}`.bold.italic.gray);
   console.log('The installation has completed successfully!\n'.blue);
-  console.log('> Update the parameters in file: ' + `./${projectName}/.env`.italic.bold.gray);
-  console.log('> Launch application: ' + `node ./${projectName}/index.js`.italic.bold.gray);
+  console.log('> Update the parameters  : ' + `./${projectName}/.env`.italic.bold.gray);
+  console.log('> Launch the application : ' + `node ./${projectName}/index.js`.italic.bold.gray);
   console.log('*********************************************\n'.brightGreen);
 
   process.chdir(currentDir)
