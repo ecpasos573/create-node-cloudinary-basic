@@ -1,6 +1,6 @@
 # create-node-cloudinary-basic
 
-## Cloudinary Node SDK Starter ##
+## Cloudinary Node SDK Console App Starter ##
 
 Creates a Node JS console application that have the Cloudinary library integration and basic sample usage.
 
