@@ -2,13 +2,11 @@ require('dotenv').load();
 
 var fs = require('fs');
 var colors = require('colors');
-var objAppMain = require('./src/appmain/app_main');
-var objLogger = require('./src/appmain/app_utility');
+var appConsoleMain = require('./src/appmain/app_main');
+var logger = require('./src/appmain/app_utility');
 
 require('./src/cloudinary/image_upload_api');
-
-
-global.cloudinary = require('cloudinary').v2;
+require('./src/cloudinary/video_upload_api');
 
 
 /**
@@ -17,34 +15,28 @@ global.cloudinary = require('cloudinary').v2;
  */
 async function main() {
 
-  objLogger.info("\nStarting app...");
-  objAppMain.initialize();
+  logger.info("\nStarting app...");
+  if(appConsoleMain.initialize())
+  {
+    logger.info("\n*********************************************".green)
+    logger.info("*** Hello world!!!".green);
+    logger.info("*********************************************".green)
 
-  objLogger.processlog("\nPerforming image upload processing...\n");
+    logger.processlog("\nPerforming image upload processing...");
 
-  await funcImageUploadBasic001();
-
-  await funcImageUploadBasic002();
-
-  // **********
-
-  // Image: CRUD function samples
-
-  // Image: Advance features
-
-
-
-  //objLogger.processlog("\nPerforming image upload processing...\n");
-
-  // **********
-
-  // Video: CRUD function samples
-
-  // Video: Advance features
-
-  // **********
-
-  objLogger.info("\nHello world!!!\n".green);
+    imageFileUploadBasicFunc();
+    imageFileUploadPromiseFunc();
+    imageFileUploadWithPublicIdFunc();
+    imageFileUploadWithEagerTransformationFunc();
+    imageFileUploadFromRemoteURLFunc();
+    imageFileUploadUsingStreamFunc();
+    imageFileUploadBase64EncodedFunc();
+    
+  }
+  else
+  {
+    logger.warn("Kindly update the .env parameters!\n")
+  }
   
 }
 

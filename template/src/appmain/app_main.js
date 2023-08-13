@@ -44,7 +44,8 @@ module.exports = {
     /**
      * Perform the general app processing 
      * @returns bResult
-     */
+     *
+     /
     execute_general_processes: function() {
         var bResult = false;
 
@@ -52,4 +53,6 @@ module.exports = {
         
         return bResult;
     }
+    */
+
 };

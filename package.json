@@ -1,6 +1,6 @@
 {
   "name": "create-node-cloudinary-basic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cloudinary Node JS SDK console app starter template",
   "bin": {
     "create-node-cloudinary-basic": "index.js"

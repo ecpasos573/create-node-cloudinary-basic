@@ -24,6 +24,7 @@ if (require.main === module) {
 
 The sample modules are in the folder `./src`.
 
+
 ## Additional resources ##
 
 * [Node integration documentation](http://cloudinary.com/documentation/node_integration)
