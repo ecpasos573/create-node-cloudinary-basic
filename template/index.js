@@ -22,7 +22,7 @@ async function main() {
     logger.info("*** Hello world!!!".green);
     logger.info("*********************************************".green)
 
-    logger.processlog("\nPerforming image upload processing...");
+    logger.processlog("\nPerforming upload processing...");
 
     imageFileUploadBasicFunc();
     imageFileUploadPromiseFunc();
@@ -31,6 +31,8 @@ async function main() {
     imageFileUploadFromRemoteURLFunc();
     imageFileUploadUsingStreamFunc();
     imageFileUploadBase64EncodedFunc();
+
+    videoFileUploadBasicFunc();
     
   }
   else
